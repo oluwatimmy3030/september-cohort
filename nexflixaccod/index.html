@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        background-color: black;
+      }
+        .rowone{
+        width: 80%;
+        height: 300px;
+        margin-inline: auto;
+        }
+       .colo{
+      
+        background-image: linear-gradient(310deg, rgb(34, 2, 34),rgba(0, 0, 0, 0.923));
+       } 
+  
+       .accod{
+        margin-left: 160px;
+        --bs-accordion-btn-focus-box-shadow:none;
+       }
+       .button{
+      
+        
+       }
+       .button .plus{
+        margin-left: 800px;
+
+       }
+       .accordion-button::after{
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"  fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>');
+      transform: scale(2.9);
+  }
+  .accordion-button:not(.collapsed)::after{
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>');
+    transform: rotate(45deg) scale(2.9);
+  }
+      
+       
+    </style>
+</head>
+<body>
+  
+      <div class="row g-3  rowone ">
+        <div class="col">
+          <div class="card h-100 colo">
+            <div class="card-body">
+              <h5 class="card-title text-light">Enjoy on your TV</h5>
+              <p class="card-text text-light">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+          </div>
+    </div>
+        <div class="col">
+          <div class="card h-100 colo">
+            <div class="card-body">
+              <h5 class="card-title text-light ">Download your shows to watch offline</h5>
+              <p class="card-text text-light">Save your favorites easily and always have something to watch.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 colo">
+            <div class="card-body">
+              <h5 class="card-title text-light">Watch everywhere</h5>
+              <p class="card-text text-light">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 colo">
+              <div class="card-body">
+                <h5 class="card-title text-light">Create profiles for kids</h5>
+                <p class="card-text text-light">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="accordion accordion-flush mt-5 accod" id="accordionFlushExample" style="width: 65%;">
+        <div class="accordion-item mt-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-light button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What is Netflix?
+           </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-dark text-light">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. <br><br>
+
+              You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+          </div>
+        </div>
+        <div class="accordion-item mt-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-light button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How much does Nexflix cost?
+           </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body  bg-dark text-light">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦2,200 to ₦7,000 a month. No extra costs, no contracts.</div>
+          </div>
+        </div>
+        <div class="accordion-item mt-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-light button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Where can I watch?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-dark text-light">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br><br>
+
+              You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item mt-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-light button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+              How do I cancel?
+           </button>
+          </h2>
+          <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-dark text-light">Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+          </div>
+        </div>
+        <div class="accordion-item mt-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-light button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+              What can I watch on Netflix?
+            </button>
+          </h2>
+          <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-dark text-light">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+          </div>
+        </div>
+        <div class="accordion-item mt-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-light button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+              Is Nexflix good for kids?
+             </button>
+          </h2>
+          <div id="flush-collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-dark text-light">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. <br><br>
+
+              Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

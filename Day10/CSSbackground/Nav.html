@@ -1,0 +1,1780 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    }
+    body{
+    background-color: rgb(222, 222, 222);
+
+    }
+    header{
+        
+    user-select: none;
+    }
+    header nav{
+    margin: 0 auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    }
+    header nav .leftnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    header nav .leftnav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2em;
+    padding-top: 18px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    }
+    header nav .leftnav ul li a{
+    text-decoration: none;
+    color: #000000;
+    }
+    header nav .rightnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2em;
+    }
+    header nav .rightnav p{
+        padding-top: 15px;
+    }
+    header nav .rightnav button{
+    background-color: #fb651e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    }
+    header nav .rightnav button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    }
+   
+    header nav .leftnav ul .start{
+    position: relative;
+
+
+    }
+
+    header nav .leftnav ul .start .drop{
+    position: absolute;
+    width: 280px;
+    line-height: 2;
+    
+    background-color: #fff;
+    border-radius: 10px;
+    padding:8px 10px;
+    box-shadow: 1px 1px 18px 1px rgba(128, 128, 128, 0.474);
+    display: none;
+
+    }
+    header nav .leftnav ul .start .drop .all:hover{
+    background-color: rgba(128, 128, 128, 0.295);
+    }
+    header nav .leftnav ul .start .drop .firstul li:hover{
+    background-color: rgba(128, 128, 128, 0.285);
+
+    }
+    header nav .leftnav ul .start .drop .firstul li{
+    padding: 10px;
+
+    }
+    header nav .leftnav ul .start .drop .secondul li{
+    padding: 10px;
+    }
+
+    header nav .leftnav ul .start .drop .all{
+    display: block;
+    padding: 15px;
+    }
+    header nav .leftnav ul .start .drop .firstul{
+    display: block;
+    padding: 2px;
+
+    }
+    header nav .leftnav ul .start .drop .secondul{
+    display: block;
+
+    }
+    header nav .leftnav ul .start .drop .secondul li:hover{
+    background-color: rgba(128, 128, 128, 0.285);
+
+    }
+    header nav .leftnav ul .start:hover .drop{
+    display: block;
+    }
+    header nav .leftnav ul .start .drop .firstul li::before{
+    content: "◦";
+    }
+    header nav .rightnav svg{
+    background-color: #fff; 
+    padding: 2px;
+    display: none;
+    }
+    /* mediaquery */
+    @media(max-width:1250px){
+    header nav .rightnav p {
+    display: none;
+    }
+    }
+    @media(max-width:873px){
+    header nav .leftnav ul li {
+    display: none;
+    }
+    }
+
+    @media(max-width:407px){
+    header nav .leftnav ul li{
+    font-size: 40;
+    flex-wrap: wrap;
+    }
+    }
+
+    @media(max-width:668px){
+    header nav .rightnav button {
+    display: none;
+    }
+    header nav .rightnav svg {
+    display: block;
+    }
+    }
+    /* HERO SECTION START */
+    .container{
+    background-color: white;
+    max-width: 100%;
+    }
+    .container-inner{
+        width: 92%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .containerImg  img{
+    width: 96%;
+    height: 600px;
+    position: relative;
+    left: 10rem;
+    }
+    .containerImg img{
+        overflow: hidden;
+    }
+    .containerText{
+        width: 650px;
+    position: relative;
+    left:   8.5rem;
+    line-height: 36px;
+    transform: translateY(7.1rem);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .containerText span{
+    color: #FB651E;
+    display: block;
+    font-size: 60px;
+    margin-top: 10px;
+    }
+    .containerText h2{
+        font-size: 60px;
+    }
+    .containerText  p{
+    font-size: 28px;
+    font-size: 500;
+    margin-top: 30px;
+    line-height: 36px;
+    }
+    .containerBtn button{
+    background-color: #FDA942;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    
+    }
+    .containerBtn button a{ 
+    color: white;
+    padding: 10px;
+    flex-wrap: nowrap;
+    
+    text-decoration: none;
+    }
+
+
+    .items p{
+    transform: translateY(3rem);
+    color: #F26522;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .items p span{
+     display: block;
+    color: black;
+    font-size: 20px;
+    }
+ @media (max-width:1252px){
+    .containerText{
+    left: 9rem;
+    padding: 0 5px 0 0;
+    }
+    .containerImg{
+ overflow-y: hidden;
+     position: relative;
+     left: 7rem;
+ 
+    }
+    .item{
+        right: 500px;
+    }
+    .items p{
+    transform: translateY(3rem);
+    color: #F26522;
+    font-size:20px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .items p span{
+font-size: 15px;
+font-weight: 100;
+    }
+
+
+.containerImg img{
+    /* left: -2rem; */
+position: relative;
+width: 92%;
+}
+    header nav{
+max-width: 95%;
+    }
+    .containerText{
+  font-size: 37px;
+    }
+    .containerBtn{
+transform: translateY(2rem);
+    }
+    .containerImg  img{
+    /* width: 82%; */
+    position: relative;
+    left: 3.6rem;
+    }
+    .containerImg {
+        width: 60%; 
+
+    }
+    .secfive .col1 img{
+        width: 400px;
+        margin-right: 30px;
+    }
+    .secsix .img2 img{
+        right: 900px;
+        width: 10px;
+        height: 120px;
+    }
+    .microimg .img2{
+    width: 40%;
+ }
+ .sectwo .bigdiv .box{
+    height: 200px;
+ }
+
+    
+   
+}
+
+    @media(max-width:1238px){
+      .sectwo .pictures{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+       } 
+       .secsix .img2 img{
+        width: 100px;
+        align-items: start;
+        justify-content: left;
+        
+        
+    }
+    
+}
+@media only screen and (max-width:1215px){
+ .secfive .col1 img{
+    width: 340px;
+    height: 160px;
+ }
+}
+    @media(max-width: 1215px){
+        .containerText{
+            transform: translateY(4.1rem);
+
+    }
+    .containerText p{
+  font-size: 23px;
+    }
+    .containerText p{
+  left: 30px;
+    }
+    
+    .imgdiv1 img{
+      width: 95%;  
+    }
+    .imgdiv2 img{
+      width: 95%;  
+    }
+    .imgdiv3 img{
+      width: 95%;  
+    }
+}
+
+@media(max-width: 1188px){
+    .sectwo .bigdiv .box{
+    height: 240px;
+ } 
+}
+@media only screen and (max-width:1168px){
+    .item .itemdiv{
+        display: none;
+    }
+    .item2 .itemdiv2{
+        display: none;
+    }
+    .containerImg{
+        transform: translateX(3rem);
+    }
+    .sectwo .bigdiv .box{
+      height: 250px;  
+    }
+}
+@media only screen and (max-width:1073px){
+    .containerText{
+  font-size: 20px;
+    }
+    .containerText p{
+  font-size: 20px;
+    }
+    
+}
+
+@media only screen and (max-width:1007px){
+ .secfive .col1 img{
+    width: 280px;
+    height: 120px;
+    margin-right: 30px;
+ }
+}
+@media only screen and (max-width:1007px){
+ .secfive .col1 img{
+    width: 240px;
+    height: 120px;
+    margin-right: 30px;
+ }
+
+}
+@media(max-width:982px){
+    .sectwo .bigdiv .box{
+      height: 350px;
+      
+ }
+}
+@media(max-width:977px){
+      .sectwo .pictures{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+ } 
+ .microimg .img2 img{
+    width: 94%;
+ }
+ 
+    
+}
+@media(max-width:936){
+    .secsix .img2 img{
+    flex-wrap: wrap;
+        width: 600px;    
+    }
+}
+
+@media only screen and (max-width:913px){
+
+}
+@media only screen and (max-width:913px){
+header nav{
+    max-width: 97%;
+}
+.containerText{
+    position: relative;
+    left: 2rem;
+}
+.containerImg img{
+overflow-x: hidden;
+}
+}
+ @media(max-width:860){
+.secthree .twod {
+  width: 30px;
+  
+}
+.microimg .img2{
+    width: 30%;
+ }
+ }
+ 
+
+@media only screen and (max-width:857px){
+header nav{
+    max-width: 97%;
+}
+.containerText{
+    position: relative;
+    left: 2rem;
+    font-size: 30px;
+}
+.containerImg img{
+overflow-x: hidden;
+}
+.containerImg {
+    display: none;
+}
+.container{
+    padding-bottom: 9rem;
+}
+.boxes{
+    display: none;
+}
+.containerText{
+left: 13rem;
+font-size: 40px;
+}
+
+}
+
+@media(max-width:767){
+.secfive .col1 img{
+    width: 400px;
+    height: 200px;
+    
+}
+.carou{
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;   
+
+}
+}
+
+@media only screen and (max-width:747px){
+
+.containerText{
+left: 7rem;
+font-size: 40px;
+}
+.micro2{
+flex-wrap: wrap;
+}
+.microimg .img2{
+display: none;
+} 
+.secseven .vid iframe{
+  width: 80%; 
+  height: 250px; 
+} 
+}
+
+@media(max-width:683px){
+    .secfour .youvid iframe{
+     width: 500px;
+    height: 280px;
+    }  
+}
+@media(max-width:653px){
+    .sectwo .bigdiv {
+      display: block;
+      top: -120px;
+      right: 40px;
+      margin-top: 200px;
+    
+    
+    }
+    .sectwo .bigdiv .box{
+        height: 160px;
+        width: 500px;
+        margin-left: 60px;
+        
+        
+    }
+    .sectwo .bigdiv .box p{
+    line-height: 1.4;
+    width: 400px;
+    } 
+    
+}
+@media(max-width:667px){
+      .sectwo .pictures{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       } 
+    
+}
+@media only screen and (max-width:565px){
+
+.containerText{
+left: 4rem;
+font-size: 40px;
+}
+.sectwo .pictures{
+        margin-right: 4rem;
+       } 
+}
+@media only screen and (max-width:557px){
+ .sectwo .bigdiv .box{
+        height: 140px;
+        width: 400px;
+    
+        
+    }
+    
+}
+@media only screen and (max-width:500px){
+
+.containerText{
+left: 4rem;
+font-size: 30px;
+}
+}
+@media(max-width:477px){
+      .sectwo .pictures{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 60px;
+ } 
+.secthree{
+    margin-left: 30px;
+}
+    
+}
+@media(max-width:498px){
+    .secfour .youvid iframe{
+    width: 300px;
+    height: 220px;
+ }  
+}
+@media  (max-width:434px){
+ .sectwo .bigdiv .box{
+        width: 350px;   
+    }
+}
+
+@media (max-width:413px){
+
+.containerText{
+font-size: 25px;
+left: 2rem;
+}
+.containerBtn button{
+    width: 40%;
+}
+}
+@media (max-width:408px){
+
+.containerText p{
+font-size: 20px;
+
+}
+.containerBtn button{
+    width: 46%;
+}
+}
+@media (max-width:360px){
+ .sectwo .bigdiv .box{
+        width: 320px;  
+        
+    }
+   .sectwo .bigdiv .box p{
+        width: 280px;
+        line-height: 15px;
+    }
+}
+@media(max-width:360px){
+ .sectwo .bigdiv .box{
+        height: 200px; 
+        width: 280px; 
+        
+        
+    }
+    .sectwo .bigdiv .box p{
+        width: 150px;
+    } 
+
+}
+@media(max-width:356){
+.secfive .col1 img{
+    width: 160px;
+    height: 120px;
+
+}
+}
+@media (max-width:308px){
+
+.containerText{
+font-size: 17px;
+
+}
+.containerText p{
+font-size: 15px;
+
+}
+.containerBtn button{
+    width: 46%;
+}
+.containerBtn button a{
+   font-size: 14px;
+}
+}
+@media(max-width:298px){
+    .secfour .youvid iframe{
+        width: 200px;
+height: 220px;
+    }  
+}
+@media  (max-width:261px){
+ .sectwo .bigdiv .box{
+     
+        width: 230px; 
+        
+        
+    }
+    .sectwo .bigdiv .box p{
+        width: 200px;
+    } 
+
+}
+@media(max-width:220px){
+    .secfour .youvid iframe{
+        width: 220px;
+height: 220px;
+    }  
+}
+.item .itemdiv{
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    top: 240px;
+    left: 720px;
+    /* border: medium solid green; */
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item2 .itemdiv2{
+    width: 190px;
+    height: 120px;
+    position:absolute ;
+    left: 720px;
+    /* border: medium solid green; */
+    transform: translateY(-20rem); 
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+ .item2 .itemdiv2 .itemh2{
+            position: absolute;
+            top: 25px;
+            left: 50px;
+            font-family:Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #fb651e;
+            /* background-color: #fff;  */
+}
+ .item2 .itemdiv2 .itemp2{
+            position: absolute;
+            top: 60px;
+            left: 40px;
+            font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 24px;
+            color: #000000;
+        }
+        .item .itemdiv .itemh{
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            font-family:Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 40px;
+            color: #fb651e;
+            /* background-color: #fff; */
+
+        }
+         .item .itemdiv .itemp{
+            position: absolute;
+            top: 65px;
+            left: 50px;
+            font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 24px;
+            color: #000000;
+
+        }
+
+
+                                    /* section2 css*/
+ .sectwo{
+    min-height: 400px;
+  /* border: medium solid blue; */
+  
+  
+ }                             
+
+.bigdiv{
+    /* border: medium solid black; */
+    width: 80%;
+min-height: 250px;
+    display: flex;
+    /* justify-content: space-between; */
+align-items: center;
+margin-inline: auto;
+margin-top: 120px;
+position: relative;
+/* display: block; */
+}
+.bigdiv .box{
+    
+    width: 400px;
+    height: 170px;
+    background-color: #fff;
+    padding: 3px 15px;
+    border: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    
+    
+}
+
+
+
+
+.bigdiv .box p{
+    line-height: 30px;
+    font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+     font-size: 16px;
+    font-weight: 200;
+    color: #000000;
+}
+.bigdiv .box h3{
+    font-family:Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+     font-size: 18px;
+    font-weight: 200;
+    line-height: 40px;
+     color: rgba(0, 0, 255, 0.607);
+}
+                                    /* TOP COMPANIES */
+    .top{
+      text-align: center; 
+      margin-top: 60px; 
+    }
+    .top h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+        color: #000000;
+    }
+                                        /* picture */
+     .pictures{
+        width: 80%;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        
+     }  
+     .pictures div img{
+        width: 120px;
+        height:60px;
+        background-color: #fff;
+        padding: 15px;
+        margin: 15px;
+        border-radius: 5px;
+        gap: 15px;
+     }    
+                                            /* SECTHREE                              */
+       .secthree{
+        background-color: #fff;
+        margin-top: 70px;
+    
+        
+    
+       }  
+    .secthree .oned .hone{
+        padding-top: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        padding-bottom: 70px;
+    }    
+    .secthree .oned .hone span{
+        color: #fb651e;
+    }  
+    .secthree .twod{
+      width: 80%; 
+      display: flex;
+      justify-content: space-between; 
+      margin-inline: auto;
+      flex-wrap: wrap;
+
+    
+        
+    }
+    
+    .secthree .twod .min{
+        height: 120px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        border-left: medium solid #fb651e;
+        border-width: 4px;
+        padding-left: 15px;
+        padding-bottom: 40px;
+
+    }
+    .secthree .twod .granddiv1 ul{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-top: 40px;
+        
+        
+    } 
+    .secthree .twod .granddiv1 ul li{
+        line-height: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .secthree .twod .granddiv1 ul li span{
+        color: #268bd2;
+    }
+    .secthree .twod .granddiv2 ul{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-top: 40px;
+        
+    }
+    .secthree .twod .granddiv2 ul li{
+        line-height: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .secthree .twod .granddiv2 ul li span{
+        color: #268bd2;
+    }
+    .secthree .twod .granddiv3 ul{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        padding-top: 40px;
+        
+        
+    }
+    .secthree .twod .granddiv3 ul li{
+        line-height: 20px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .secthree .twod .granddiv3 ul li span{
+        color: #268bd2;
+    } 
+    .secthree .twod .granddiv3 ul{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-top: 40px;
+        
+    }
+    .secthree .twod .granddiv3 ul li{
+        line-height: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .secthree .twod .granddiv3 ul li span{
+        color: #268bd2;
+    } 
+    .secthree .twod .granddiv3 ul{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-top: 40px;
+        
+    }
+    .secthree .twod .granddiv3 ul li{
+        line-height: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .secthree .twod .granddiv3 ul li span{
+        color: #268bd2;
+    }
+    .secthree .twod .granddiv4 ul{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-top: 40px;
+        
+    }
+    .secthree .twod .granddiv4 ul li{
+        line-height: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .secthree .twod .granddiv4 ul li span{
+        color: #268bd2;
+    } 
+                                        /* sec4 */
+   .secfour{
+    margin-top: 80px;
+   }
+   .secfour .sec4div h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+   }
+   .secfour .sec4div h1 span{
+    color: #FB651E;
+   }
+   .secfour .youvid{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 120px;
+   }
+   .secfive{
+    background-color: #fff;
+    padding-top: 80px;
+    /* border: solid green; */
+    
+    
+    /* padding-bottom: 80px; */
+    /* margin-bottom: 80px; */
+   }
+   .secfive .secfh1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: center;
+   }
+   .secfive .secfh1 h1 span{
+    color: #FB651E;
+   }
+  
+ 
+   .col1{
+        /* border: medium solid green; */
+        min-height: 500px;
+        background-color: rgba(128, 128, 128, 0.368);
+        row-gap: 15px;
+        border-radius: 8px;
+      }
+      .col1 img{
+        width: 490px;
+    height: 220px;
+    margin-top: 40px;
+    margin-left:40px;
+    border-radius: 10px; 
+      }
+      .col1  .contd{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    border-width: 6rem;
+    margin-left: 40px;
+    border-left: medium solid #FB651E;
+    
+   }
+   .col1  .each{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+   }
+      .col2{
+        border: medium solid green;
+        min-height: 400px;
+        background-color: rgba(128, 128, 128, 0.368);
+        
+      }
+      .col1  p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    border-width: 6rem;
+    margin-left: 40px;
+    border-left: medium solid #FB651E;
+    
+   }
+   .col1  .invdiv{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+   }
+      .col3{
+        border: medium solid green;
+        min-height: 400px;
+        background-color: rgba(128, 128, 128, 0.368);
+        text-align: center;
+      }
+      .col1  .three{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    border-width: 6rem;
+    margin-left: 40px;
+    border-left: medium solid #FB651E;
+    
+   }
+   .col1  .threed{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+   }
+      .col4{
+        border: medium solid green;
+        min-height: 400px;
+        background-color: rgba(128, 128, 128, 0.368);
+        text-align: center;
+      }
+      .col1  .four{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    border-width: 6rem;
+    margin-left: 40px;
+    border-left: medium solid #FB651E;
+    
+   }
+   .col1  .fourd{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+   }
+    .col5{
+        /* border: medium solid green; */
+        min-height: 400px;
+        background-color: rgba(128, 128, 128, 0.368);
+        text-align: center;
+    }
+    .col1  .five{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    border-width: 6rem;
+    margin-left: 40px;
+    border-left: medium solid #FB651E;
+    
+   }
+   .col1  .fived{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+   }
+    .col6{
+        /* border: medium solid green; */
+        min-height: 400px;
+        background-color: rgba(128, 128, 128, 0.368);
+        text-align: center;
+    }
+    .col1  .six{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    border-width: 6rem;
+    margin-left: 40px;
+    border-left: medium solid #FB651E;
+    
+   }
+   .col1  .sixd{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+   }
+      .containers{
+        width: 80%;
+        align-items: center;
+        margin-inline: auto;
+      }
+    .row{
+    row-gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+        
+    }
+                                            /* secsix */
+    
+    .micro{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+        text-align: center;
+    }
+    .micro span{
+        color: #FB651E;
+    }
+    .micro2{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin-inline: auto;
+        margin-top: 40px;
+        
+    }
+    .micro2 ul{
+    line-height: 40px;
+    }
+    .microimg{
+        width: 70%;
+      margin-top: 40px; 
+      display: flex;
+      margin-inline: auto;
+      
+    }
+    .microimg .img2 img{
+      border-radius: 7px;  
+    }
+    .sectsix{
+      margin-bottom: 60px;  
+    }
+    .secseven{
+        /* border: medium solid green; */
+        background-color: #fff;
+        padding-bottom: 30px;
+        
+    }
+
+    .hone{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .secseven .vid iframe{
+     margin-top: 60px;
+     margin-bottom: 30px; 
+    }
+    .secseven .vp span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #FB651E; 
+    }
+    .secseven .vp{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: center;
+
+    }
+    .seceight{
+         margin-top: 40px; 
+         margin-bottom: 40px;  
+    }
+    .seceight .diveig{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+        color: #000000;
+        text-align: center;
+    }
+    .marc{
+        width: 70%;
+        margin-top: 30px;
+        display: flex;
+        margin-inline: auto;
+        align-items: center;
+        gap: 20px;
+    }
+    .marc img{
+       border-radius: 10px; 
+       height: 80px;
+    }
+    .marc .ptag{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 200;
+        color: #000000;
+    }
+    .marc .ptag .span1{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #000000;
+    }
+    .marc .ptag .span2{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 200;
+        color: #000000;
+    }
+    .marc .ptag2{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 200;
+        color: #000000;
+        margin-top: 10px;
+    }
+    .marc .ptag2 .span3{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #000000;
+    }
+    .marc .ptag2 .span4{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 200;
+        color: #000000;
+    }
+    .secnine{
+        background-color: #fff;
+         margin-top: 40px; 
+         padding-bottom: 40px;   
+    }
+    .ninediv{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .carou{
+       display: flex;
+       margin-inline: auto;
+       align-items: center;
+       justify-content: center;
+       gap: 25px;
+       margin-top: 50px; 
+    }
+    .carou img{
+        border-radius: 7px;
+    }
+    .imgdiv1 p {
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .imgdiv1 p span{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    .imgdiv2 p {
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .imgdiv2 p span{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    .imgdiv3 p {
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .imgdiv3 p span{
+        font-family: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    
+        
+        
+    
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="leftnav">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC" class="h-full w-full" alt="Y Combinator" width="56" height="56">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Companies</a></li>
+            <li class="start">
+                <a href="">Startup Jobs</a>
+                <div class="drop">
+                    <div class="all">All jobs</div>
+                    <ul class="firstul">
+                        <li> Engineering</li>
+                        <li> Operation</li>
+                        <li> Marketing</li>
+                        <li> Sides</li>
+                    </ul>
+                    <ul class="secondul">
+                        <li>Pioneer internship program 2024</li>
+                        <li>Startup job Guide</li>
+                        <li>Career Coaching</li>
+                        <li>YC Startup jobs Blog</li>
+                    </ul> 
+        
+
+                </div>
+            </li>
+            <li><a href="">Find a co-founder</a></li>
+            <li><a href="">Library</a></li>
+            <li><a href="">Safe</a></li>
+            <li><a href="">Resources</a></li>
+        </ul>
+           </div>
+           
+           <div class="rightnav">
+            <p>Apply for <strong>F2024</strong>batch.</p>
+            <button><a href="">Apply</a></button>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-6 w-6" width="2.25em" height="2.25em"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" style="color: rgba(0, 0, 0, 0.421);" class="open"></path></svg>
+
+        </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="container-inner">
+            <div class="containerText">
+        
+                <h2>Why<span>
+                    Y Combinator?</span><p>We give startups a <br> disproportionate advantage.</p></h2>
+           <div class="containerBtn">
+            <button><a href="">Apply to  YC</a></button>
+           </div>
+            </div>
+            <div class="containerImg">
+                <img src="./imageback/ycomb.webp" alt="">
+            
+                
+                </div>
+
+            </div>
+            <div class="item"> 
+                <div class="itemdiv">
+                    <h1 class="itemh">
+                      5,000  
+                    </h1>
+                    <p class="itemp">funded startups</p>
+                </div>
+
+            </div>
+            <div class="item2">
+                <div class="itemdiv2">
+                    <h1 class="itemh2">
+                      $600B 
+                    </h1>
+                    <p class="itemp2">combined valuation</p>
+                </div>
+        
+        
+        </div>
+        
+    </div>
+
+     
+    <section class="sectwo">
+     <div class="bigdiv">
+        <div class="box">
+            <h3>YC Top Companies List by Revenue</h3>
+            <p>Congratulations to the companies <br>recognized on the inagural YC Top <br> Companies List by Revenue.</p>
+        </div>
+        <div class="box">
+            <h3>YC Library</h3>
+            <p>Explore some of the best YC videos <br>,podcasts,and essays from over the years. <br> Come learn how to make something people <br> want.</p>
+        </div>
+        <div class="box">
+            <h3>The Standard Deal</h3>
+           <p> When a company is accepted into the YC <br>batch program,we invest a total of <br>$500,000.</p>
+        </div>
+     </div>
+     <div class="top"><h1>Top YC companies</h1></div>
+     <div class="pictures">
+        <div><img src="../Y COMBI/stripe-d1d72c19fe7fbfd9514ffbc26f1c5922a1b77fd7445c78a34fe319c03b986713.png" alt="" ></div>
+          <div><img src="../Y COMBI/airbnb-423deceb57ea913e2f3a39a1c2b6ecb690f019933b4d767ac91121777aa59107.png" alt=""></div>
+          <div><img src="../Y COMBI/instacart-81d147c59ca98d84b72f606de3af981da477423738120d3b2baec64c3162ba14.png" alt=""></div>
+          <div><img src="../Y COMBI/doordash-f41c839bb0522ead71e8d99ed3ae0495c04271f6f3f3edc6b0effbbff172bc1d.png" alt=""></div>
+          <div><img src="../Y COMBI/cruise-38dda623d4f317a49a65099cd460bd1c6b3e4b91ffeccb6df0ec02284345b338.png" alt=""></div>
+          <div><img src="../Y COMBI/twitch-1b4772b83a73b6fa827ef467ecc17023a2bfbbf936633bffb5e93674690e74d6.png" alt=""></div>
+          <div><img src="../Y COMBI/coinbase-7d4f13e4f2ed0f6d3a608a7834517031d6663a0cbf1ba231d1dca2f079c091a2.png" alt=""></div>
+          <div><img src="../Y COMBI/pagerduty-dc361aab31ef341eaed4d0a5a420c42f4d557745c67ffc5999c7b556c408d150.png" alt=""></div>
+          <div><img src="../Y COMBI/faire-3113845be6506be7761eaef7257e882b6e0c94081653c0f7459f8ed0c0596338.png" alt=""></div>
+          <div><img src="../Y COMBI/brex-a76f83603a430f266cddacaceaf525080d91c3febf04ea8000ae1b4c67e8786f.png" alt=""></div>
+          <div><img src="../Y COMBI/deel-2eb5105300f66ebfa07b0ea805b6680d71c0b6de0272c3f75eebf6d2ae3077cf.png" alt=""></div>
+          <div><img src="../Y COMBI/rippling-100bc0c1cdabd9e38c671420ba16ba8f6d1af656dc3bc32eeeaa029f1bec257a.png" alt=""></div>
+          <div><img src="../Y COMBI/reddit-d5ed3340e70326e6a372be76e2ec1b761a4d757954ae69311671f82f59afbedb.png" alt=""></div>
+          <div><img src="../Y COMBI/gusto-b3f56f64a500a85cb44a2621db217778c9c698f83da59921e41c732dacdb3f35.png" alt=""></div>
+          <div><img src="../Y COMBI/flexport-ace3180f9926a45ed72eea63ed4c5a1a0aeb4e14ec7eb3ffff7c513aba07d0a9.png" alt=""></div>
+          <div><img src="../Y COMBI/dropbox-83b803aca663267bc2c480efca454ea8f9d31c39dd2ccba3856104a987e2692d.png" alt=""></div>
+          <div><img src="../Y COMBI/razorpay-7b4097215fa2d028e821d34bd3d1558309acd87ac5599e8164545e3a7fda5b95.png" alt=""></div>
+          <div><img src="../Y COMBI/scale_ai-09562d62f19867f7e4af006fb0003148d1f0dff4ad32fa23e283c98a88044443.png" alt=""></div>
+          <div><img src="../Y COMBI/gitlab-9998d8cb37a75de7004d679606bb8c5517d8c82848fb3e6ff13f8587143545b3.png" alt=""></div>
+          <div><img src="../Y COMBI/benchling-cabc6ab6f92c92af620210d56c5cb872d5a2b77d3244924a4b35c0fba03aa411.png" alt=""></div>
+          <div><img src="../Y COMBI/fivetran-80f044801357e31b679f1c6adb33cd674b80a6fba2eef509dcb930f57118d324.png" alt=""></div>
+          <div><img src="../Y COMBI/rappi-58eceb42cb4e6ba589842600cba0a0448e2ebe42a8ad4d0b9e26f1e6ccd9f36d.png" alt=""></div>
+          <div><img src="../Y COMBI/checkr-dfe048bab6c8869e0faa186c947e1f8ba70fe25468952d432d6730bc7c64b557.png" alt=""></div>
+          <div><img src="../Y COMBI/zapier-a571989e13599601b2555b75551ee1cee4161f77df939d8f9d99ef750d6c9851.png" alt=""></div>
+          <div><img src="../Y COMBI/whatnot-44d4dfd2add836c788c42baa567fa4769b88f6e4da07d8f8eaf79d321b9be41c.png" alt=""></div>
+          <div><img src="../Y COMBI/podium-403d2cf6edcf8bd760845e1a356161d69df559a59aeda2e36bf90b0454d75c85.png" alt=""></div>
+          <div><img src="../Y COMBI/webflow-e0f324025f848a85519e046dfcffa3c517ad4470106e8ee54f697df16be929ce.png" alt=""></div>
+          <div><img src="../Y COMBI/zepto-ed94889c5a2c2128ca2a39d5ce829a68cc792ed3e1b479089d2cbd3e03fa6483.png" alt=""></div>
+          <div><img src="../Y COMBI/groww-b94b5a87bc987c7fa70ef04790d93b54fdca1d9edcf3d4d104865d740542fd4f.png" alt=""></div>
+          <div><img src="../Y COMBI/segment-bc64ab58b63ec0bdb1aa5888ca7771acabc39db12e9c30b4a5215014b766ffc4.png" alt=""></div>
+          <div><img src="../Y COMBI/ironclad-7ea21638879d20154e44f1614042b2fc93babefe9059a42835874975f73106d1.png" alt=""></div>
+          <div></div>
+     </div>
+    </section>
+    <div class="secthree">
+        <div class="oned">
+<center><h1 class="hone"><span>We help founders</span> make something <br>people want and the result speak for <br>themselves.</h1></center>
+</div>
+<div class="twod">
+   <div class="granddiv1">
+    <div class="min">We help founders at <br> their earliest stages <br> regardless of their <br> age.</div>
+    <ul>
+        <li><span>54%</span> of YC`s billion dollar <br> companies had no revenue <br> when they applied.</li>
+        <li><span>52%</span> of YC`s billion dollar <br> companies had no revenue <br> when they applied.</li>
+        <li><span>42%</span> of YC`s billion dollar <br> companies applied with only <br> an idea</li>
+    </ul>
+   </div>
+    <div class="granddiv2">
+        <div class="min">we improve the <br> success rate of our<br> startups.</div>
+        <ul>
+            <li><span>39%</span>of YC companies have <br>raised a series A</li>
+            <li><span>18%</span> of YC companies are <br> valued at<span>$100m+</span></li>
+            <li><span>4%</span> of YC companies have <br> become <span>billion <br> dollar </span>companies </li>
+        </ul>
+    </div>
+    <div class="granddiv3">
+        <div class="min">We give srartups a <br>huge fundraiser <br> advantages.</div>
+        <ul>
+            <li>YC companies have raised <br> money at <span>2.5x higher <br> valuation</span>after participating in <br> the program</li>
+            <li>The median YC company <br> raised <span>$1.3M+ at $14M <br> valuation cap</span>after <br> participating in the program.</li>
+            <li>The top 10% of YC companies <br> raised <span>$1.8+ at $20m <br> valuation cap</span> after <br> participating in the program</li>
+        </ul>
+    </div>
+   <div class="granddiv4">
+    <div class="min">Our companies have <br> a track record of <br> becoming billion <br> dollar companies.</div>
+    <ul>
+        <li>YC has funded <span>90+</span> billion <br> dollar companies
+        <li><span>66%</span> of those companies had <br>YC at their first investor</li>
+        <li>YC companies have an <br> average <span>15B</span> market cap at the <br> time of public exit, <span>3x <br> higher</span> than average</li>
+    </ul>
+   </div>
+</div>
+
+
+  
+
+
+
+    </div>
+    <div class="secfour">
+
+        <div class="sec4div"><h1>Our formular for <span>success.</span></h1></div>
+        <div class="youvid">
+            <iframe width="672" height="378" src="https://www.youtube.com/embed/EiRnSjcVIqk" title="Inside The Most Powerful Startup Community In The World" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="secfive">
+        <div class="secfh1">
+            <h1>YC is <span>run by startups founders</span> who have built <br> exactly what they wanted when starting and <br> growing a startup.</h1>
+        </div>
+
+        <div class="containers">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="col1">
+                    <img src="./imageback/most-experienced-partners-DX4ZPbr4.jpg"alt="">
+                    <div class="contd">
+                        The most experienced partners
+                    </div>
+                    <div class="each">
+                        Each founder is assigned a dedicated group partner who has <br>mentored hundreds of YC companies. They have more data on <br>what it takes to build a successful startup than any other early <br>stage startup adivisor. These group partners read application, <br>interview companies, and mentors startups throughout the <br>batch. You can access them in person,over email,and on Slack
+                    </div>
+                 </div>
+                </div>
+           
+
+            <div class="col-md-6 col-12">
+                <div class="col1">
+                    <img src="././imageback/investor-network-DsrGWUIM.jpg" alt="">
+                    <p>Investor network</p>
+                    <div class="invdiv">YC companies have raised $85 billion dollars from the best<br>investors in the world.Our founders have access to the YC<br>Investor Database which has profiles and reviews for more than <br>50,000 startup investors.</div>
+    
+    
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="col1">
+                    <img src="./imageback/private-social-network-DAUtdNFy.jpg" alt="">
+                    <div class="three">Private social network only for founders</div>
+                    <div class="threed">YC founders get to benefit from the collective wisdom of over <br>9000 YC alumni. They can access these alums through <br>Bookface, our private social network. We have a forum for <br>asking questions to the community, a founder directory for <br>finding specific people who can provide advice and <br>intros, and a company directory for finding potential customers.</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="col1">
+                    <img src="./imageback/exclusive-deals-DZOi8DL7.jpg" alt="">
+                    <div class="four">Exclusive deals</div>
+                    <div class="fourd">YC founders have access to over 1000 deals from leading <br>software companies. Every YC company gets free credits or <br>significant discounts on hosting, banking, cap table <br>management, back office, and much more. Companies report brthese deals to be worth in excess of $500,000.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="col1">
+                    <img src="./imageback/secret-handbook-BLok8-bB.jpg" alt="">
+                    <div class="five">The best written advice</div>
+                    <div class="fived">YC founders get to benefit from our collective experience <br>funding 5000 companies across almost 20 years. We <br>have extensive documentation for common questions about <br>fundraising, go to market, sales, product market fit, mental <br>health, hiring, and much more.</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="col1">
+                    <img src="./imageback/capital-after-batch-DQmLQXDH.jpg" alt="">
+                    <div class="six">Networks to build your team</div>
+                    <div class="sixd">Through<u> Work at a Startup</u>and <u>HN,</u> we help our founders hire <br>the small number of early engineers and other team members <br>critical to finding product market fit. At any given time there are <br>150,000+ candidates searching for jobs at early stage YC <br>companies.</div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+    <div class="sectsix">
+        <div class="micro">
+            <h3>
+                We put 
+                <span>
+                    founders' intrests
+                </span>
+                first
+            </h3>
+         </div>
+        <div class="micro2">
+             <ul>  
+                <li>We don't take a board seat.</li>
+                <li>We don't take weeks/months to decide to invest.</li>
+                <li>We don't require decks, business plans, or MBAs.</li>
+             </ul>
+            <ul>
+                <li>We don't demand 20% of your company.</li>
+                <li>We don't charge fees.</li>
+                <li>We don't tell you what to do. We only offer advice.</li>
+            </ul>
+        </div>
+
+        <div class="microimg">
+           <div class="img2">
+            <img src="./imageback/Left-BiSNksVM.jpg" alt="" width="90%" height="230px">
+           </div>
+           <div class="img2">
+            <img src="./imageback/Middle-ORNvunn1.jpg" alt="" width="90%" height="230px">
+           </div>
+           <div class="img2">
+            <img src="./imageback/Right-CEqBBFo3.jpg" alt="" width="90%" height="230px">
+           </div>
+        </div>
+    </div>
+
+    <div class="secseven">
+        <div class="hone">
+             Is YC Worth 7%?
+        </div>
+        <div class="vid">
+            <center>
+                <iframe width="672" height="378" src="https://www.youtube.com/embed/DOez-RwJ7mg" title="The Truth About Y Combinator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </center>
+        </div>
+        <p class="vp">
+            <span>
+                Learn more
+            </span>
+            about evaluating equity.
+        </p>
+    </div>
+
+    <div class="seceight">
+        <div class="diveig">
+            Hear more from the community.
+        </div>
+        <div class="marc">
+            <img src="./imageback/marc-andreessen.jpg" alt="" width="80px">
+            <p class="ptag">
+                "Y Combinator is the best program for creating top-end entrepreneurs that has ever existed." <br>
+                <span class="span1">
+                    Marc Andreessen,
+                </span>
+                <span class="span2">
+                    General Partner, Andreessen Horowitz
+                </span>
+            </p>
+        </div>
+
+        <div class="marc">
+            <img src="./imageback/ron-conway.jpg" alt="" width="80px">
+            <p class="ptag2">
+                "Y Combinator is the best startup accelerator in the world. YC helps their companies a lot, and the YC community is a huge  asset for the companies that go through the program."<br>
+                <span class="span3">
+                    Ron Conway,
+                </span>
+                <span class="span4">
+                    Founder, SV Angel
+                </span>
+            </p>
+        </div>
+
+        <div class="marc">
+            <img src="./imageback/brian-chesky.jpg" alt="" width="80px">
+            <p class="ptag2">
+                "At YC, we were challenged to do things that don't scale – to start with the perfect experience for one person, then work backwards and scale it to 100 people who love us. This was the best piece of advice we've ever received."<br>
+                <span class="span3">
+                    Brian Chesky,
+                </span>
+                <span class="span4">
+                    Founder, Airbnb (YC W09)
+                </span>
+            </p>
+        </div>
+
+        <div class="marc">
+            <img src="./imageback/patrick-collinson.jpg" alt="" width="80px">
+            <p class="ptag2">
+                "I doubt that Stripe would have worked without YC. It's that simple. Acquiring early customers, figuring out who to hire, closing deals with banks, raising money – YC's partners were closely involved and crucially helpful."<br>
+                <span class="span3">
+                    Patrick Collison,
+                </span>
+                <span class="span4">
+                    Founder, Stripe (YC S09)
+                </span>
+            </p>
+        </div>
+        
+    </div>
+    
+
+    <div class="secnine">
+        <div class="ninediv">
+            The Latest from YC
+        </div>
+        <div class="carou">
+            <div class="imgdiv1">
+                <img src="./imageback/first.jpeg" alt="" width="350px" height="210px">
+                <p>
+                    Why Vertical LLM Agents Are The New $1 Billion<br>SaaS Opportunities 
+                    <span>1 day ago</span>
+                </p>
+            </div>
+            <div class="imgdiv2">
+                <img src="./imageback/second.jpeg" alt="" width="350px" height="210px">
+                <p>
+                   Stripe Head of Design Katie Dill Reviews Startup <br>Websites
+                    <span>33K views . 7 days ago</span>
+
+                </p>
+            </div>
+            <div class="imgdiv3">
+                <img src="./imageback/third.jpeg" alt="" width="350px" height="210px">
+                <p>
+                    How To Find A Co-Founder <br>
+                    <span>33K views . 11 days ago</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>

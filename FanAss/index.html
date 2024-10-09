@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fan</title>
+    <style>
+        .container{
+            /* border: solid gray; */
+            width: 50%;
+            margin-inline: auto;
+            height: 800px;
+        position: relative;
+        }
+        .one{
+            border: medium solid black;
+            width: 250px;
+            height: 250px;
+            margin-inline: auto;
+            margin-top: 40px;
+            border-radius: 100%;
+            position: absolute;
+            left: 280px;
+            background-color: rgba(0, 0, 0, 0.352);
+        }
+        .onea{
+            border:inherit;
+            width: 50px;
+            height: 50px;
+            margin-inline: auto;
+            margin-top: 95px;
+            border-radius: 100%;
+            position: absolute;
+            left: 100px;
+           
+        }
+        @keyframes rotate{
+            from{
+              transform: rotate(0deg);  
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .one .onea strong{
+    position: absolute;
+    left: 3px;
+    bottom: 9px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    
+        }
+        .two{
+            border: medium solid gray;
+            width: 30px;
+            height: 400px;
+            margin-inline: auto;
+            position: absolute;
+            left: 390px;
+            top: 290px;
+            background-color: black;
+        }
+    .three{
+        border: medium solid gray;
+        width: 250px;
+        height: 30px;
+        border-radius: 100%;
+        position: absolute;
+        left: 280px;
+        top: 690px;
+        background-color: black;
+    }
+    .four{
+        border: medium solid yellow;
+        width: 20px;
+        height: 20px;
+        border-radius: 80%;
+        position: absolute;
+        top: 310px;
+        left: 395px;
+        background-color: red;
+    }
+    .five{
+        border: medium solid yellow;
+        width: 20px;
+        height: 20px;
+        border-radius: 80%;
+        position: absolute;
+        top: 350px;
+        left: 395px;
+        background-color: blue;
+    }
+    /* .six{
+        border: medium solid black;
+        width: 20px;
+        height: 0px;
+        border-radius: 30%;
+        position: absolute;
+        top: 190px;
+        left: 395px;
+        background-color: black;
+    } */
+    /* .seven{
+        border: medium solid black;
+        width: 90px;
+        height: 20px;
+        border-radius: 30%;
+        position: absolute;
+        top: 150px;
+        left: 435px;
+        background-color: black;
+        
+    } */
+    .eight{
+        border: medium solid black;
+        width: 20px;
+        height: 220px;
+        border-radius: 30%;
+        position: absolute;
+        top: 54px;
+        left: 398px;
+        /* background-color: black; */
+        animation-name: rotate;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
+            
+
+            
+    }
+    .nine{
+        border: medium solid black;
+        width: 220px;
+        height: 20px;
+        border-radius: 30%;
+        position: absolute;
+        top: 150px;
+        left: 296px;
+        /* background-color: black; */
+        animation-name: rotate;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
+            
+        
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="one">
+        <div class="onea"><strong>OX</strong></div>
+    </div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+    <div class="nine"></div>
+</div>
+</body>
+</html>

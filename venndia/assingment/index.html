@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venn diagram</title>
+    <style>
+.mother{
+    border: medium solid rgba(0, 0, 0, 0.307);
+    border-radius: 15px;
+    width: 45%;
+    height: 50vh;
+    margin-inline: auto;
+    
+    
+}
+.wrapper{
+    /* background-color: darkblue; */
+    width: 50%;
+    margin-inline: auto;
+    margin-right: 200px;
+    margin-top: 70px;
+    
+
+}
+.mother .one{
+    border: medium solid black;
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+    left: 140px;
+    mix-blend-mode: screen;
+    
+}
+.mother .two{
+    border: medium solid black;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position:relative;
+    left: 50px;
+    bottom: 210px;
+    mix-blend-mode: screen;
+}
+.mother .three{
+    border: medium solid black;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position:relative;
+    bottom: 310px;
+    left: 90px;
+    mix-blend-mode: screen;
+}
+
+    </style>
+</head>
+<body>
+    <section class="mother">
+        <div class="wrapper">
+
+<div class="one"></div>
+
+<div class="two"></div>
+
+<div class="three"></div>
+</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css GRID</title>
+
+    <style>
+.grid-container{
+    border: medium solid green;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-items{
+    border: inherit;
+}
+
+.grid-items:nth-of-type(1){
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1/4;
+    text-align: center;
+}
+.grid-items:nth-of-type(2){
+    grid-row: 2/4;
+}
+    </style>
+
+
+</head>
+<body>
+<div class="grid-container">
+<div class="grid-items">
+    HEADER
+</div>
+<div class="grid-items"></div>
+<div class="grid-items"></div>
+<div class="grid-items"></div>
+<div class="grid-items"></div>
+<div class="grid-items"></div>
+<div class="grid-items"></div>
+<div class="grid-items"></div>
+<div class="grid-items"></div>
+
+
+
+
+</div>
+</body>
+</html>

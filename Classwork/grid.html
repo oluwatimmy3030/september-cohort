@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.gridcontainer{
+    border: medium solid rgba(0, 0, 0, 0.668);
+    width: 500px;
+    height: 50vh;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 10px;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.668);
+    margin-top: 200px;
+    
+}
+.griditem{
+    border: inherit;
+}
+.griditem:nth-of-type(1){
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 30px;
+background-color: rgba(0, 0, 255, 0.359);
+    
+    
+}
+.griditem:nth-of-type(2){
+    grid-row: 2/4;
+    text-align: center;
+  padding-top: 70px;
+  background-color: skyblue;
+    
+
+}
+
+.griditem:nth-of-type(3){
+    grid-column: 2/4;
+    text-align: center;
+    padding-top: 40px;
+    background-color: skyblue;
+
+    
+}
+.griditem:nth-of-type(4){
+text-align: center;
+padding-top: 40px;
+background-color: skyblue;
+
+    
+}
+.griditem:nth-of-type(5){
+    text-align: center;
+    padding-top: 40px;
+    background-color: skyblue;
+
+}
+.griditem:nth-of-type(6){
+grid-column: 1/4;
+text-align: center;
+padding-top: 40px;
+background-color: rgba(0, 0, 255, 0.359);    
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="griditem">Header</div>
+        <div class="griditem">Side Bar</div>
+        <div class="griditem">Content1</div>
+        <div class="griditem">Content2</div>
+        <div class="griditem">Content3</div>
+        <div class="griditem">Footer</div>
+        <!-- <div class="griditem"></div>
+        <div class="griditem"></div>
+        <div class="griditem"></div> -->
+
+    </div>
+</body>
+</html>

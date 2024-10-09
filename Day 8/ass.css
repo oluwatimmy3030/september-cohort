@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mother{
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    margin: 100px;
+    padding-bottom: 150px;
+    align-items: center;
+    width: 90%;
+}
+.all .head{
+    font-size: 62px;
+    color: #29292c;
+    font-weight: 600;
+    text-align: left;
+    margin-inline: auto;
+}
+
+.child{
+    display: block;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+    font-size: 28px;
+    line-height: 31px;
+    padding-right: 170px;
+    font-style: normal;
+    font-weight: 500;
+    color: #494a51;
+}
+.button{
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: red;
+    border: #ce2d2d;
+    text-decoration: none;
+}
+.img{
+    width: 600px;
+    height: 500px;
+}
+.sec2{
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    margin: 100px;
+    padding-bottom: 130px;
+    width: 90%;
+    align-items: center;
+
+}
+.para2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #67676e;
+    padding-bottom: 40px;
+}
+.secondh{
+font-size: 44px;
+font-weight: 600;
+line-height: 44px;
+color: #29292c;
+padding-bottom: 30px;
+}
+.lefty{
+    width: 50%;
+    padding-bottom: 30px;
+}
+.righty{
+ width: 30%;
+ margin-left: 300px;
+}
+.para3{
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 31px;
+   color: #494a51;
+   padding-right: 150px;
+   padding-bottom: 40px; 
+}
+.info{
+   font-size: 22px;
+   font-weight: 400; 
+   line-height: 31px;
+   color: #e03131;
+}
+.thirdh{
+    font-size: 24px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #29292c;
+}
+.list{
+  font-size: 22px;
+  line-height: 45px;
+  font-weight: 400;  
+}
+.sec3{
+    display: flex;
+    /* align-items: center; */
+    width: 90%;
+    justify-content: space-between;
+    margin-inline: auto;
+
+
+}
+.para4{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #67676e;
+    padding-bottom: 30px;
+}
+.fourthh{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #29292c;
+    padding-bottom: 40px;
+}
+.one{
+    width: 40%;
+    /* padding: 20px; */
+    line-height: 2;
+    
+}
+.para5{
+   font-size: 22px;
+   line-height: 31px;
+    font-weight: 400;
+    color: #494a51;
+    /* padding-right: 100px;  */
+    padding-bottom: 50px;
+}
+.anchor2{
+    font-size: 21px;
+    font: 400;
+    line-height: 31px;
+    color: #e03131;
+}
+ .two{
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    font-weight: 400;
+    line-height: 95px;
+    color: #494a51;
+    margin left: 5rem;
+}

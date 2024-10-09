@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQI nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+
+            background-color: rgba(128, 128, 128, 0.056);
+        }
+        nav{
+            /* border: medium solid black; */
+            width: 80%;
+            margin-inline: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em;
+        }
+        .leftnav{
+
+        }
+        .rightnav ul{
+            /* width: 50%; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2.5em;
+            list-style-type: none;
+            
+        }
+        .rightnav ul li a{
+            text-decoration: none;
+        }
+        .rightnav .firstli{
+            position: relative;
+            
+        }
+        .rightnav .firstli .ulone{
+            position: absolute;
+            top: 70px;
+             width: 200px;
+            line-height: 3;
+         border-top: medium solid blue;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            color: black;
+            /* padding-top: 50px; */
+            box-shadow: 1px 1px 18px 1px rgba(128, 128, 128, 0.197);
+            display:block;
+            display: none;
+            animation: fade 2s ease;
+        }
+        @keyframes fade {
+            from{
+                opacity: 0;
+                transform: translateY(-60%);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+        }
+        .rightnav .firstli:hover .ulone{
+            display: block;
+            
+        
+        }
+        
+        .rightnav .firstli .ulone li:hover{
+            background-color: rgba(128, 128, 128, 0.395);
+        }
+        .rightnav .firstli .ulone li{
+            padding: 8px 15px;
+        }          
+        
+        .rightnav .secondli{
+            position: relative;
+        }
+        .rightnav .secondli .ultwo{
+            position: absolute;
+            display: block;
+            top: 70px;
+             width: 240px;
+            line-height: 2;
+         border-top: medium solid blue;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            color: black;
+            box-shadow: 1px 1px 18px 1px rgba(128, 128, 128, 0.197);
+            display: none;
+            animation: fade 2s ease;
+        }
+        @keyframes fade {
+            from{
+                opacity: 0;
+                transform: translateY(-60%);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .rightnav .secondli:hover .ultwo{
+            display: block;
+        }
+        .rightnav .secondli .ultwo li:hover{
+            background-color: rgba(128, 128, 128, 0.395);
+        }
+        .rightnav .secondli .ultwo li{
+            padding: 8px 15px;
+        }       
+        .rightnav .thirdli{
+            position: relative;
+        }
+        .rightnav .thirdli .ulthree{
+            position: absolute;
+            display: block;
+            top: 70px;
+             width: 240px;
+            line-height: 2;
+         border-top: medium solid blue;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            color: black;
+            box-shadow: 1px 1px 18px 1px rgba(128, 128, 128, 0.197);
+            display: none;
+            animation: fade 2s ease;
+        }
+        .rightnav .thirdli:hover .ulthree{
+            display: block;
+        } 
+        @keyframes fade {
+            from{
+                opacity: 0;
+                transform: translateY(-60%);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .rightnav .thirdli .ulthree li:hover{
+            background-color: rgba(128, 128, 128, 0.395);
+        }
+        .rightnav .thirdli .ulthree li{
+            padding: 8px 15px;
+        }    
+        .rightnav .fourthli .ulfour{
+            position: absolute;
+            top: 125px;
+            display: block;
+            width: 150px;
+            background-color: #fff;
+            border-radius: 5px;
+            /* border: medium solid green; */
+            line-height: 2;
+            padding: 10px;
+            border-top: medium solid blue;
+            color: black;
+            box-shadow: 1px 1px 18px 1px rgba(128, 128, 128, 0.197);
+            display: none;
+            animation: fade 2s ease;
+        }
+        @keyframes fade {
+            from{
+                opacity: 0;
+                transform: translateY(-60%);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        } 
+        .rightnav .fourthli:hover .ulfour{
+            display: block;
+        }
+        .rightnav .fourthli .ulfour li:hover{
+            background-color: rgba(128, 128, 128, 0.395);
+        }
+        .rightnav .fourthli .ulfour li{
+            padding: 8px 15px;
+        } 
+
+        .rightnav .grandul li a:hover{
+            color: rgba(0, 0, 255, 0.167);
+        } 
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+         <div class="leftnav">
+            <img src="./sqilogo/sqi_logo-removebg-preview.png" alt="" width="60" height="60">
+         </div>
+         <div class="rightnav">
+            <ul class="grandul">
+                <li class="firstli">
+                    <a href="">About</a>
+                    <ul class="ulone">
+                       <li>Our Story</li>
+                       <li>Our Team</li>
+                       <li>Campus Info</li> 
+                    </ul>
+                </li>
+                <li class="secondli">
+                    <a href="">Programmes</a>
+                    <ul class="ultwo">
+                        <li>National Innovation Diploma</li>
+                        <li>Proffessional Diploma Program</li>
+                        <li>Executive Professional Certificate Programme</li>
+                    </ul>
+                </li>
+                <li class="thirdli">
+                    <a href="">Adimissions</a>
+                    <ul class="ulthree">
+                        <li>Apply for a Programme</li>
+                        <li>Made of Study</li>
+                        <li>Tuition</li>
+                        <li>Frequently Asked Questions</li>
+
+                    </ul>
+                </li>
+                <li class="fourthli">
+                    <a href="">E-Portal</a>
+                    <ul class="ulfour">
+                        <li>Student</li>
+                        <li>Staff</li>
+                    </ul>
+                </li>
+                <li><a href="">SQI Scholarship</a></li>
+                <li><a href="">News</a></li>
+            </ul>
+         </div>
+        </nav>
+    </header>
+</body>
+</html>

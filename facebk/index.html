@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+        .container{
+            background-color: rgba(128, 128, 128, 0.142);
+        }
+
+        .container .wrapper{
+            /* border: medium solid green; */
+            width: 80%;
+            height: 100vh;
+            margin-inline: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container .wrapper .first-item .fbImg img{
+            width: 400px;
+        }
+
+        .container .wrapper .second-item{
+            /* border: medium solid green; */
+            width: 35%;
+        }
+
+        .container .wrapper .second-item form {
+            /* border: medium solid red; */
+            width: 80%;
+
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 2px 3px 20px 4px rgba(128, 128, 128, 0.303);
+        }
+
+        .container .wrapper .second-item form .inpOne{
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 6px;
+
+            outline: thin solid;
+            /* width: 80%;
+            margin-inline: auto; */
+        }
+
+        .container .wrapper .second-item form .inpOne input{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+
+        }
+
+        .container .wrapper .second-item form .inpOne:focus{
+            /* border: thin solid rgba(0, 81, 255, 0.626); */
+        }
+
+
+        .container .wrapper .second-item form .inpTwo{
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            outline: thin solid;
+            /* width: 80%;
+            margin-inline: auto; */
+        }
+
+        .container .wrapper .second-item form .inpTwo input{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+        }
+
+
+        .container .wrapper .second-item form .login{
+            /* border: medium solid red; */
+            text-align: center;
+            padding: 15px;
+            border-radius: 6px;
+            background-color: blue;
+            margin-bottom: 10px;
+        }
+
+        .container .wrapper .second-item form .login a{
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        .container .wrapper .second-item form .password{
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 10px;
+            
+        }
+
+
+        .container .wrapper .second-item form .password a{
+            text-decoration: none;
+            color: blue;
+        }
+
+        .container .wrapper .second-item form .line{
+            border: 1px solid rgba(128, 128, 128, 0.234);
+
+            margin-bottom:25px;
+        }
+
+        .container .wrapper .second-item form .createAcc{
+            background-color: rgba(0, 128, 0, 0.79);
+            text-decoration: none;
+            padding: 15px;
+            text-align: center;
+
+            border-radius: 6px;
+            margin-bottom: 10px;
+            width: 65%;
+            margin-inline: auto;
+
+        }
+
+        .container .wrapper .second-item form .createAcc a{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+
+        .container .wrapper .second-item p{
+            /* border: medium solid red; */
+            width: 80%;
+            margin-inline: auto;
+            margin-top: 30px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.819);
+            font-family: "Roboto", sans-serif;
+        }
+
+        .container .wrapper .second-item p a{
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+        }
+        .container .wrapper .first-item .para{
+            font-family:  Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #1c1e21;
+        }
+        .container .wrapper .first-item{
+            /* border: medium solid green; */
+        }
+
+        .container .wrapper .first-item .fbImg{
+            /* border: medium solid red; */
+        }
+
+
+        .container .wrapper .first-item .fbImg img{
+            margin-left: -42px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+
+
+    <section class="container">
+        <div class="wrapper">
+            <div class="first-item">
+
+
+                <div class="fbImg">
+                    <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+                </div>
+
+                <p class="para">
+                    Facebook helps you connect and share with the people in your life.
+                </p>
+            </div>
+
+            <div class="second-item">
+                <form action="">
+                    <div class="inpOne">
+                        <input type="text" placeholder="Email address or phone number">
+                    </div>
+
+                    <div class="inpTwo">
+                        <input type="text" placeholder="Password">
+                    </div>
+
+                    <div class="login">
+                        <a href="">Log in</a>
+                    </div>
+
+                    <div class="password">
+                        <a href="">Forgotten password?</a>
+                    </div>
+
+                    <div class="line">
+
+                    </div>
+
+                    <div class="createAcc">
+                        <a href="">Create new account</a>
+                    </div>
+                </form>
+
+                <p><a href="">Create a page</a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
